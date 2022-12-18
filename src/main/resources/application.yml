@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: JPA Locking
+  datasource:
+    name: MySQL Connection
+    url: jdbc:mysql://localhost:3307/locking_demo?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true&serverTimezone=CET
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    open-in-view: false
+
+# Logging Configuration
+logging:
+  level:
+    net.ttddyy.dsproxy.listener: DEBUG
